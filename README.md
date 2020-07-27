@@ -20,9 +20,6 @@ Gif created with [Recordit](http://recordit.co/) <br />
 <img src="https://github.com/amashhour1974/co2-emissions-calc/blob/master/display%20images/3.png" width=500><br>
 ### Results page
 <img src="https://github.com/amashhour1974/co2-emissions-calc/blob/master/display%20images/4.png" width=500><br>
-### Anaylsis page
-<img src="https://github.com/amashhour1974/co2-emissions-calc/blob/master/display%20images/5.png" width=500><br>
-
 
 ## References
 
