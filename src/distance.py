@@ -5,7 +5,12 @@ import time
 import extract_number
 
 def getDistance(startLoc, endLoc):
-    maps_key = ''
+    
+    # Read API Maps key : maps_key 
+    api_file = open("maps_key.txt", "r")
+    maps_key= api_file.read()
+    api_file.close()
+
     base_url = 'https://maps.googleapis.com/maps/api/distancematrix/json'
 
     # e.g.
