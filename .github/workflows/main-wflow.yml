@@ -1,20 +1,21 @@
-# This is a basic workflow to help you get started with Actions
+workflow "Publish to App Service" {
+  on = "push"
+  resolves = ["Deploy to Web App"]
+}
 
-name: CI
+action "Azure Login" {
+  uses = "Azure/github-actions/login@master"
+  env = {
+    AZURE_SUBSCRIPTION = "Azure subscription 1"
+  }
+  secrets = ["AZURE_SERVICE_APP_ID", "AZURE_SERVICE_PASSWORD", "AZURE_SERVICE_TENANT"]
+}
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-# Github CI/CD Workflow
-
-workflow "Publish to App Service" {on = "push" resolves = ["Deploy to Web App"]}
-
-action "Azure Login" {uses = "Azure/github-actions/login@master" env = {AZURE_SUBSCRIPTION = "Azure subscription 1"} secrets = ["AZURE_SERVICE_APP_ID", "AZURE_SERVICE_PASSWORD", "AZURE_SERVICE_TENANT"]}
-
-action "Deploy to Web App" {uses = "Azure/github-actions/webapp@master" needs = ["Azure Login"] env = {AZURE_APP_NAME = "co2-emission-app" AZURE_APP_PACKAGE_LOCATION = "./"}}
+action "Deploy to Web App" {
+  uses = "Azure/github-actions/webapp@master"
+  needs = ["Azure Login"]
+  env = {
+    AZURE_APP_NAME = "co2-emission-app"
+    AZURE_APP_PACKAGE_LOCATION = "./"
+  }
+}
