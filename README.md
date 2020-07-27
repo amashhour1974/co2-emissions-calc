@@ -23,7 +23,6 @@ Gif created with [Recordit](http://recordit.co/) <br />
 <img src="https://github.com/amashhour1974/co2-emissions-calc/blob/master/display%20images/5.png" width=500><br>
 
 
-
 ## References
 
 [General Google Maps API Documentation](https://developers.google.com/maps/documentation/)
