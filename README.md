@@ -24,29 +24,30 @@ Gif created with [Recordit](http://recordit.co/) <br />
     - Open a web browser, and go to the sample app at http://localhost:5000/
 ## Deploy on Mircosfot Azure Cloud
 
--    Create New GitHub Repository for Application
--    Push All Application to Github Repository
-      git init
-      git add .
-      git commit -a -m “first commit”
-      git remote add origin 'Repository_url' 
-      git push -u origin master
+    -    Create New GitHub Repository for Application
+    -    Push All Application to Github Repository
+        git init
+        git add .
+        git commit -a -m “first commit”
+        git remote add origin 'Repository_url' 
+        git push -u origin master
 
--   Deploy the code in your local folder (co2-emissions-calc) using the az webapp up command:
+    -   Deploy the code in your local folder (co2-emissions-calc) using the az webapp up command:
 
-az webapp up --sku F1 -n <app-name>  --resource-group <resource-group> -l westeurope
+    az webapp up --sku F1 -n <app-name>  --resource-group <resource-group> -l westeurope
 
--   If the az command is not recognized, be sure you have the Azure CLI installed as described in Set up your initial environment.
-    Replace <app_name> with a name that's unique across all of Azure (valid characters are a-z, 0-9, and -). 
+    -   If the az command is not recognized, be sure you have the Azure CLI installed as described in Set up your initial environment.
+        Replace <app_name> with a name that's unique across all of Azure (valid characters are a-z, 0-9, and -). 
 
-    The --sku F1 argument creates the web app on the Free pricing tier. Omit this argument to use a faster premium tier, which incurs an hourly cost.
+        The --sku F1 argument creates the web app on the Free pricing tier. Omit this argument to use a faster premium tier, which incurs an hourly cost.
 
--   You can optionally include the argument -l <location-name> where <location_name> is an Azure region such as westeurope
--   Browse to the deployed application in your web browser at the URL http://<app-name>.azurewebsites.net.
+    -   You can optionally include the argument -l <location-name> where <location_name> is an Azure region such as westeurope
+    -   Browse to the deployed application in your web browser at the URL http://<app-name>.azurewebsites.net.
 
-- Build GitHub CI Workflow Actions to publish the application changes from local environment to Azure App service 
-    --  Either to build it from Azure App Deployment center 
-    -- Or Build it from Github Repository from actions tab
+    - Build GitHub CI Workflow Actions to publish the application changes from local environment to Azure App service 
+        --  Either to build it from Azure App Deployment center 
+        -- Or Build it from Github Repository from actions tab
+
 
 ## Images from the CO2 Emissions Calculator
 
