@@ -47,7 +47,7 @@ Gif created with [Recordit](http://recordit.co/) <br />
 
     - Build GitHub CI Workflow Actions to publish the application changes from local environment to Azure App service 
         --  Either to build it from Azure App Deployment center 
-        --  Or Build it from Github Repository from actions tab
+        --  Or Build it from Github Repository from actions tab (location: ./github/workflows/master_co2-emission-app.yml)
 
 
 ## Images from the CO2 Emissions Calculator
