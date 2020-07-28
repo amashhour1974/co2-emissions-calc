@@ -1,26 +1,26 @@
 <!DOCTYPE html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carbon Footprint Calculator</title>
+    <title>CO2  Emissions Calculator</title>
     <link rel="stylesheet" href="../static/app.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   </head>
 
   <body>
     <div class="ribbon">
-      <h1>Carbon Footprint Calculator</h1>
+      <h1>CO2  Emissions Calculator</h1>
     </div>
     <!--Get starting point-->
     <form action='/app' method='POST'>
         <div class="entry-wrap">
           <label for="starting-point">Starting Point</label>
-          <input type="text" name="starting-point" placeholder="UC San Diego">
+          <input type="text" name="starting-point" placeholder="Berlin">
         </div>
         <div class="entry-wrap">
           <label for="destination">Destination</label>
-          <input type="text" name="destination" placeholder="Vallartas"><br>
+          <input type="text" name="destination" placeholder="Hamburg"><br>
         </div>
-      <label for="mpg">MPG</label>
+      <label for="mpg">Transport Method</label>
         <input id="mpg" name="mpg" value="0"><br>
         <input type="submit">
     </form>

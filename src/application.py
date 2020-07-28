@@ -37,7 +37,7 @@ def calc():
             url = base_url + info[0] + '/' + info[1]
 
             # calculate the necessary variables
-            emission = emission_calc.calcFootprint(request.form['mpg'], info[2])
+            emission = emission_calc.co2calcprint(request.form['mpg'], info[2])
             yearTravels = emission_calc.numTravelsInYear(emission)
             trees = emission_calc.numTrees(emission)
             homes = emission_calc.numPerHomePerYear(emission)
