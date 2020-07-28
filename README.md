@@ -24,6 +24,14 @@ Gif created with [Recordit](http://recordit.co/) <br />
     - Open a web browser, and go to the sample app at http://localhost:5000/
 ## Deploy on Mircosfot Azure Cloud
 
+-    Create New GitHub Repository for Application
+-    Push All Application to Github Repository
+      git init
+      git add .
+      git commit -a -m “first commit”
+      git remote add origin 'Repository_url' 
+      git push -u origin master
+
 -   Deploy the code in your local folder (co2-emissions-calc) using the az webapp up command:
 
 az webapp up --sku F1 -n <app-name>  --resource-group <resource-group> -l westeurope
@@ -36,6 +44,9 @@ az webapp up --sku F1 -n <app-name>  --resource-group <resource-group> -l westeu
 -   You can optionally include the argument -l <location-name> where <location_name> is an Azure region such as westeurope
 -   Browse to the deployed application in your web browser at the URL http://<app-name>.azurewebsites.net.
 
+- Build GitHub CI Workflow Actions to publish the application changes from local environment to Azure App service 
+    --  Either to build it from Azure App Deployment center 
+    -- Or Build it from Github Repository from actions tab
 
 ## Images from the CO2 Emissions Calculator
 
