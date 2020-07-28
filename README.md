@@ -9,7 +9,7 @@ Gif created with [Recordit](http://recordit.co/) <br />
 <img src="https://s3.amazonaws.com/img0.recordit.co/4FLuMH8LGr.mp4?AWSAccessKeyId=AKIAINSRFOQXTN4DT46A&Expires=1539549370&Signature=Wr5VYIs8VuH0LO5K6LpwRMdjSCg%3D" width=200><br>
 
 
-## Images from the CO2 Carbon Emission Calculator
+## Images from the CO2 Emissions Calculator
 
 ### Home page
 <img src="https://github.com/amashhour1974/co2-emissions-calc/blob/master/display%20images/1.png" width=500><br>
